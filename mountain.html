@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trekking</title>
+  <style>
+    #mountain {
+      background-image: url('man-hiking-everest-scaled.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 400px;
+
+    }
+
+    #mountain2 {
+      background-image: url('1862430.jpg');
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover;
+      padding: 400px;
+      background-origin: border-box;
+    }
+
+    #mountain3 {
+      background-image: url('snowy-mountain.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 70px;
+      height: 500px;
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .column1 {
+      float: left;
+      width: 23.33%;
+
+    }
+
+    .row1::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: xx-large;
+    }
+
+    .hyperhistory {
+      position: absolute;
+      top: 8px;
+      right: 200px;
+      font-size: x-large;
+    }
+
+    .hyperlinkteam {
+      position: absolute;
+      top: 8px;
+      right: 100px;
+      font-size: x-large;
+    }
+
+
+    .logo {
+      border-radius: 50%;
+      position: absolute;
+      left: 20;
+      top: 20;
+
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container1 {
+      position: relative;
+    }
+
+
+    .text-block {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      background-color: white;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    td {
+      padding: 15px;
+    }
+
+    .span {
+      font-size: 50px;
+      color: #3b3b5f;
+    }
+
+    span b {
+      font-size: 200px;
+      color: #a1a1d3;
+    }
+
+    .column {
+      float: left;
+      padding: 10px;
+      height: 300px;
+    }
+
+    .left {
+      width: 25%;
+    }
+
+    .right {
+      width: 75%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer {
+
+      padding: 3px;
+      background-color: rgb(117, 117, 137);
+      color: rgb(41, 41, 71);
+      height: 70px;
+    }
+
+    .top-left {
+      position: absolute;
+      top: 100px;
+      left: 600px;
+      font-size: 70px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mountain">
+
+    <div>
+      <a href="history.html" class="hyperhistory" style="color: white">01.History </a>
+      <a href="team.html" class="hyperlinkteam" style="color: white">02.Team</a>
+
+    </div>
+    <div class="top-left">LOSANGELES<br>MOUNTAINS</div>
+  </div>
+
+  <div class="logo">
+    <img src="mountain-circle.jpg" style="width: 50px;">LOSANGELES MOUNTAINS
+  </div>
+
+  <div id="mountain2">
+    <div>
+      <a href="history.html" class="hyperhistory" style="color: white">01.History </a>
+      <a href="team.html" class="hyperlinkteam" style="color: white">02.Team</a>
+    </div>
+    <span class="span"><b>01.</b>HISTORY</span>
+    <p style="padding: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex
+      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.</p>
+
+    <div class="row1">
+      <div class="column1">
+        <img src="image1.jpg" alt="Snow" style="width:100%">
+      </div>
+      <div class="column1">
+        <img src="images2.jpg" alt="Forest" style="width:100%">
+      </div>
+      <div class="column1">
+        <img src="image1.jpg" alt="Mountains" style="width:100%">
+      </div>
+      <div class="column1">
+        <img src="images2.jpg" alt="Forest" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column left">
+      <span class="span"><b>02.</b>CLIMB</span>
+    </div>
+    <div class="column right">
+      <span class="flex-container" style="padding: 70px;text-align: center;">When it comes to trekking nothing can fall
+        short of the perfect settings you have
+        been dreaming about. Imagine anything and the Himalayan landscapes will fulfill it. The Winter Treks are gaining
+        popularity because of the exotic nature of the winter trails in the Himalayas.</span>
+    </div>
+  </div>
+
+
+
+  <div id="mountain3">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">MOUNTAIN1</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">MOUNTAIN2</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <div style="background-color: white; width: 50%; opacity: 82%;">
+        <h4>SCHEDULE</h4>
+        <table>
+          <tr>
+            <td>25 Nov 2016</td>
+            <td>Vestibulum Viverra</td>
+          </tr>
+          <tr>
+            <td>28 Nov 2016</td>
+            <td>Vestibulum Viverra</td>
+          </tr>
+          <tr>
+            <td>18 Dec 2016</td>
+            <td>Vestibulum Viverra</td>
+          </tr>
+          <tr>
+            <td>07 Jan 2017</td>
+            <td>Vestibulum Viverra</td>
+          </tr>
+        </table>
+
+
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <div style="background-color: white; width: 50%; opacity: 82%;">
+          <h4>SCHEDULE</h4>
+          <table>
+            <tr>
+              <td>25 Nov 2016</td>
+              <td>Vestibulum Viverra</td>
+            </tr>
+            <tr>
+              <td>28 Nov 2016</td>
+              <td>Vestibulum Viverra</td>
+            </tr>
+            <tr>
+              <td>18 Dec 2016</td>
+              <td>Vestibulum Viverra</td>
+            </tr>
+            <tr>
+              <td>07 Jan 2017</td>
+              <td>Vestibulum Viverra</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+
+    </div>
+
+  </div>
+  <footer>
+
+    <div class="row">
+      <div class="column left">
+        <div class="logo">
+          <img src="mountain-circle.jpg" style="width: 50px;">LOSANGELES MOUNTAINS
+        </div>
+      </div>
+      <!-- <div class="column right">
+        <span >LOSANGELES MOUNTAINS</span>
+      </div> -->
+    </div>
+
+  </footer>
+</body>
+
+</html>
